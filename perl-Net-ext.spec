@@ -4,8 +4,8 @@
 Summary:	Net::ext perl module
 Summary(pl):	Modu³ perla Net::ext
 Name:		perl-Net-ext
-Version:	0.932
-Release:	4
+Version:	1.011
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
