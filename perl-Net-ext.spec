@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla Net-ext
 Name:		perl-Net-ext
 Version:	0.91
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-ext-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-ext-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -15,12 +15,12 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Net-ext contains modules: Net::Gen, Net::Inet, Net::TCP, Net::UDP, Net::UNIX,
-Net::TCP::Server, and Net::UNIX::Server. 
+Net-ext contains modules: Net::Gen, Net::Inet, Net::TCP, Net::UDP,
+Net::UNIX, Net::TCP::Server, and Net::UNIX::Server.
 
 %description -l pl
-Net-ext zawiera modu³y: Net::Gen, Net::Inet, Net::TCP, Net::UDP, Net::UNIX,
-Net::TCP::Server, and Net::UNIX::Server.
+Net-ext zawiera modu³y: Net::Gen, Net::Inet, Net::TCP, Net::UDP,
+Net::UNIX, Net::TCP::Server, and Net::UNIX::Server.
 
 %prep
 %setup -q -n Net-ext-%{version}
