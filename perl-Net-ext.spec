@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (uses network!)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	ext
+%define		pdir	Net
+%define		pnam	ext
 Summary:	Net::ext perl module
 Summary(pl):	Modu³ perla Net::ext
 Name:		perl-Net-ext
