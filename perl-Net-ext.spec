@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	ext
-Summary:	Net-ext perl module
-Summary(pl):	Modu³ perla Net-ext
+Summary:	Net::ext perl module
+Summary(pl):	Modu³ perla Net::ext
 Name:		perl-Net-ext
 Version:	0.932
 Release:	4
@@ -14,11 +14,11 @@ BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Net-ext contains modules: Net::Gen, Net::Inet, Net::TCP, Net::UDP,
+Net::ext contains modules: Net::Gen, Net::Inet, Net::TCP, Net::UDP,
 Net::UNIX, Net::TCP::Server, and Net::UNIX::Server.
 
 %description -l pl
-Net-ext zawiera modu³y: Net::Gen, Net::Inet, Net::TCP, Net::UDP,
+Net::ext zawiera modu³y: Net::Gen, Net::Inet, Net::TCP, Net::UDP,
 Net::UNIX, Net::TCP::Server, and Net::UNIX::Server.
 
 %prep
