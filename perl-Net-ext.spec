@@ -5,12 +5,12 @@ Summary:	Net::ext perl module
 Summary(pl):	Modu³ perla Net::ext
 Name:		perl-Net-ext
 Version:	1.011
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,7 +25,8 @@ Net::UNIX, Net::TCP::Server, and Net::UNIX::Server.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -39,15 +40,15 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{perl_sitearch}/Net/*.pm
-%{perl_sitearch}/Net/TCP
-%{perl_sitearch}/Net/UNIX
-%{perl_sitearch}/auto/Net/UNIX
-%{perl_sitearch}/auto/Net/Inet
-%{perl_sitearch}/auto/Net/UDP
-%dir %{perl_sitearch}/auto/Net/Gen
-%{perl_sitearch}/auto/Net/Gen/*.al
-%{perl_sitearch}/auto/Net/Gen/autosplit.ix
-%{perl_sitearch}/auto/Net/Gen/Gen.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Net/Gen/Gen.so
+%{perl_vendorarch}/Net/*.pm
+%{perl_vendorarch}/Net/TCP
+%{perl_vendorarch}/Net/UNIX
+%{perl_vendorarch}/auto/Net/UNIX
+%{perl_vendorarch}/auto/Net/Inet
+%{perl_vendorarch}/auto/Net/UDP
+%dir %{perl_vendorarch}/auto/Net/Gen
+%{perl_vendorarch}/auto/Net/Gen/*.al
+%{perl_vendorarch}/auto/Net/Gen/autosplit.ix
+%{perl_vendorarch}/auto/Net/Gen/Gen.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Net/Gen/Gen.so
 %{_mandir}/man3/*
