@@ -2,8 +2,8 @@
 Summary:	Net-ext perl module
 Summary(pl):	Modu³ perla Net-ext
 Name:		perl-Net-ext
-Version:	0.91
-Release:	4
+Version:	0.932
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
