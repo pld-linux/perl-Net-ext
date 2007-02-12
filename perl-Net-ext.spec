@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	ext
 Summary:	Net::ext perl module
-Summary(pl):	Modu≥ perla Net::ext
+Summary(pl.UTF-8):   Modu≈Ç perla Net::ext
 Name:		perl-Net-ext
 Version:	1.011
 Release:	3
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Net::ext contains modules: Net::Gen, Net::Inet, Net::TCP, Net::UDP,
 Net::UNIX, Net::TCP::Server, and Net::UNIX::Server.
 
-%description -l pl
-Net::ext zawiera modu≥y: Net::Gen, Net::Inet, Net::TCP, Net::UDP,
+%description -l pl.UTF-8
+Net::ext zawiera modu≈Çy: Net::Gen, Net::Inet, Net::TCP, Net::UDP,
 Net::UNIX, Net::TCP::Server, and Net::UNIX::Server.
 
 %prep
