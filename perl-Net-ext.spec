@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	ext
 Summary:	Net::ext perl module
-Summary(pl.UTF-8):   Moduł perla Net::ext
+Summary(pl.UTF-8):	Moduł perla Net::ext
 Name:		perl-Net-ext
 Version:	1.011
 Release:	3
