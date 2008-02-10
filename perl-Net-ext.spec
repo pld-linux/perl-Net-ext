@@ -9,7 +9,7 @@ Summary:	Net::ext perl module
 Summary(pl.UTF-8):	Moduł perla Net::ext
 Name:		perl-Net-ext
 Version:	1.011
-Release:	3
+Release:	4
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
