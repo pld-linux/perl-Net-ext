@@ -5,26 +5,43 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Net
 %define		pnam	ext
-Summary:	Net::ext perl module
-Summary(pl.UTF-8):	Moduł perla Net::ext
+Summary:	Net::ext Perl modules - socket interfaces
+Summary(pl.UTF-8):	Moduły perla Net::ext - interfejsy do gniazd
 Name:		perl-Net-ext
 Version:	1.011
 Release:	5
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8be68650bef6769212127d2118b44736
+URL:		http://search.cpan.org/dist/Net-ext/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Net::ext contains modules: Net::Gen, Net::Inet, Net::TCP, Net::UDP,
-Net::UNIX, Net::TCP::Server, and Net::UNIX::Server.
+Net::ext contains the following modules:
+- Net::Gen - generic socket interface handling,
+- Net::Inet - Internet socket interface module,
+- Net::TCP - TCP sockets interface module,
+- Net::TCP::Server - TCP sockets interface module for listeners and
+  servers,
+- Net::UDP - UDP sockets interface module,
+- Net::UNIX - UNIX-domain sockets interface module,
+- Net::UNIX::Server - UNIX-domain sockets interface module for
+  listeners.
 
 %description -l pl.UTF-8
-Net::ext zawiera moduły: Net::Gen, Net::Inet, Net::TCP, Net::UDP,
-Net::UNIX, Net::TCP::Server, and Net::UNIX::Server.
+Net::ext zawiera następujące moduły:
+- Net::Gen - obsługa ogólnego interfejsu gniazd,
+- Net::Inet - moduł interfejsu do gniazd internetowych,
+- Net::TCP - moduł interfejsu do gniazd TCP,
+- Net::TCP::Server - moduł interfejsu do gniazd TCP dla nasłuchujących
+  i serwerów,
+- Net::UDP - moduł interfejsu do gniazd UDP,
+- Net::UNIX - moduł interfejsu do gniazd uniksowych,
+- Net::UNIX::Server - moduł interfejsu do gniazd uniksowych dla
+  nasłuchujących.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
