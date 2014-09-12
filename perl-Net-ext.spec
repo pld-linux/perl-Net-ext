@@ -76,6 +76,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/Net/Gen
 %{perl_vendorarch}/auto/Net/Gen/*.al
 %{perl_vendorarch}/auto/Net/Gen/autosplit.ix
-%{perl_vendorarch}/auto/Net/Gen/Gen.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Net/Gen/Gen.so
 %{_mandir}/man3/*
