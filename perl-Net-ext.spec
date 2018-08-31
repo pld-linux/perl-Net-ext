@@ -9,7 +9,7 @@ Summary:	Net::ext Perl modules - socket interfaces
 Summary(pl.UTF-8):	Moduły perla Net::ext - interfejsy do gniazd
 Name:		perl-Net-ext
 Version:	1.011
-Release:	20
+Release:	21
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -67,6 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
+%{perl_vendorarch}/attrs.pm
 %{perl_vendorarch}/Net/*.pm
 %{perl_vendorarch}/Net/TCP
 %{perl_vendorarch}/Net/UNIX
