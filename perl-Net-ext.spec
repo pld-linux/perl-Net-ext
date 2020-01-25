@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test" (uses network!)
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Net
 %define		pnam	ext
 Summary:	Net::ext Perl modules - socket interfaces
